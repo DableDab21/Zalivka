@@ -17,8 +17,12 @@ body {
 }
 
 .hex {
-    stroke-width: 1px;
-    stroke: black;
+    stroke-width: 0; /* Убираем обводку */
+    fill: #fff; /* Базовый цвет гексов */
+}
+
+.hex.filled {
+    fill: currentColor; /* Цвет гекса будет зависеть от текущего цвета элемента */
 }
 
 .wall {
@@ -43,3 +47,18 @@ body {
 .color-7 { fill: yellow; }
 .color-8 { fill: pink; }
 .color-9 { fill: orange; }
+
+
+.hex:hover {
+    stroke: rgb(0, 0, 0); /* Белая обводка при наведении */
+    stroke-width: 1px; /* Толщина обводки при наведении */
+}
+
+
+.cursor-blue {
+    cursor: url('blue-cursor.png'), auto;
+}
+
+.cursor-red {
+    cursor: url('red-cursor.png'), auto;
+}
