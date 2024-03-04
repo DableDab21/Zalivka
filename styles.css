@@ -54,11 +54,3 @@ body {
     stroke-width: 1px; /* Толщина обводки при наведении */
 }
 
-
-.cursor-blue {
-    cursor: url('blue-cursor.png'), auto;
-}
-
-.cursor-red {
-    cursor: url('red-cursor.png'), auto;
-}
