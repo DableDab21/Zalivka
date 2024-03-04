@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#game-board {
+    width: 80vw; /* Ширина равна 80% ширины окна пользователя */
+    height: 80vh; /* Высота равна 80% высоты окна пользователя */
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden; /* Скрытие гексов, выходящих за пределы экрана */
+}
+
+.hex {
+    stroke-width: 1px;
+    stroke: black;
+}
+
+.wall {
+    fill: #333; /* Цвет стен */
+}
+
+.player-start {
+    fill: black; /* Черный цвет для начальной позиции игроков */
+}
+
+.current-player {
+    border: 2px solid yellow; /* Подсветка текущего игрока */
+}
+
+/* Добавляем классы для определения цветов клеток */
+.color-1 { fill: white; }
+.color-2 { fill: red; }
+.color-3 { fill: green; }
+.color-4 { fill: lime; }
+.color-5 { fill: blue; }
+.color-6 { fill: lightblue; }
+.color-7 { fill: yellow; }
+.color-8 { fill: pink; }
+.color-9 { fill: orange; }
